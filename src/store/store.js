@@ -1,21 +1,21 @@
 // store.js
 
-// import { configureStore } from '@reduxjs/toolkit';
-// import userReducer from './reducers/userslice';
+import { configureStore } from '@reduxjs/toolkit';
+import userReducer from './reducers/userslice';
+debugger
+const store = configureStore({
+  reducer: {
+    user: userReducer,
+  },
+});
 
-// const store = configureStore({
-//   reducer: {
-//     user: userReducer,
-//   },
-// });
-
-// export default store;
+export default store;
 
 
 // store.js
-import { createStore } from "redux";
-import counterReducer from "./reducers/userslice";
+// import { createStore } from "redux";
+// import counterReducer from "./reducers/userslice";
 
-const store = createStore(counterReducer);
+// const store = createStore(counterReducer);
 
-export default store;
+// export default store;
